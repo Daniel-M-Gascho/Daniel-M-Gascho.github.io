@@ -370,6 +370,7 @@ footer {
     color: #a0a0a0;
     text-align: center;
     margin-bottom: 15px;
+    caption-side: top;
 }
 
 .tabela-discos th, 
