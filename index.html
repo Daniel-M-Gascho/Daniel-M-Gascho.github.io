@@ -1,28 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blackbear - Matthew Tyler Musto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-    <style>
-        @media (min-width: 600px) {
-            body {
-                background-color: black;
-            }
-        }
-
-        @media (max-width: 599px) {
-            body {
-                background-color: burlywood;
-            }
-
-        }
-        h1{
-            color: aliceblue;
-        }
-    </style>
 <body>
-    <h1>teste teste teste</h1>
+    <div class="container">
+        <h1>Blackbear</h1>
+        <div class="d-flex justify-content-center my-3">
+            <div class="dropdown">
+                <button class="btn btn-success dropdown-toggle" type="button" id="genreDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-music-note-list me-2"></i> Escolha seu som
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="genreDropdown">
+                    <li><a class="dropdown-item" href="https://open.spotify.com/playlist/0AaX1rMU3LCPx7Z1SzEGkM?si=582ef49672964e06" target="_blank">🎸 Rock</a></li>
+                    <li><a class="dropdown-item" href="https://open.spotify.com/playlist/7bicf3a9HxuypMGJljxZYk?si=c0254b0a73e94ea8" target="_blank">🎤 Pop</a></li>
+                    <li><a class="dropdown-item" href="https://open.spotify.com/playlist/27kLXOX0TeiAddIg86nuXz?si=8167a1428a6343cf" target="_blank">🎷 Jazz</a></li>
+                    <li><a class="dropdown-item" href="https://open.spotify.com/playlist/6G4O7YRLjTk4T4VPa4fDAM?si=778070c98f134f72" target="_blank">🎼 MPB</a></li>
+                </ul>
+            </div>
+        </div>
+        <img src="https://i.scdn.co/image/ab67616d0000b273bf33fdea7b0ff3c71b6faf75" alt="foto-album" class="artist-logo">
+        <img src="https://images.sk-static.com/images/media/profile_images/artists/4193346/huge_avatar" alt="Blackbear Tour" class="show-large-screen">
+        <div id="artista-info">
+            <img src="https://cdn-images.dzcdn.net/images/artist/ccab3933b9f0a7a58bdafb4d70599fcc/1900x1900-000000-80-0-0.jpg" alt="Blackbear" class="foto-blackbear">
+
+            <p>Blackbear, cantor e compositor americano de pop e R&B alternativo, conquistou o público jovem com hits virais entre 2015 e 2020. Sua música mistura elementos de pop, hip-hop e eletrônica, com letras diretas que abordam relacionamentos e experiências pessoais. Destacando-se por produções eletrônicas e um estilo emocional, ele representa uma nova geração de artistas. Blackbear ganhou destaque principalmente através de plataformas digitais como SoundCloud.</p>
+
+            <h2>Músicas Favoritas</h2>
+            <ol>
+                <li><a href="https://open.spotify.com/intl-pt/track/6jRq8gaZhMUyy5RclRPcAf?si=53b2f65b0df2436b" target="_blank">Hot Girl Bummer</a></li>
+                <li><a href="https://open.spotify.com/intl-pt/track/3SErMoIKdRELto2OspGs5L?si=a7d12ad43ab74196" target="_blank">IDFC</a></li>
+                <li><a href="https://open.spotify.com/intl-pt/track/6Se3x9ANMLv0dCDsjGmEjh?si=28867b2612bd48ab" target="_blank">Do Re Mi</a></li>
+            </ol>
+
+            <h2>Curiosidades sobre Blackbear</h2>
+            <ul>
+                <li>Antes de se tornar um cantor solo, Blackbear foi membro do grupo New Boyz e trabalhou como produtor para outros artistas.</li>
+                <li>Seu nome artístico "Blackbear" surgiu de um apelido da infância relacionado ao seu estilo e personalidade.</li>
+                <li>Muitas de suas músicas são inspiradas em experiências pessoais de relacionamentos e heartbreak, o que dá um toque autêntico às suas composições.</li>
+            </ul>
+
+            <blockquote>"Tell me pretty lies, look me in the face"</blockquote>
+
+            <div class="botao-container">
+                <a href="https://open.spotify.com/intl-pt/artist/2cFrymmkijnjDg9SS92EPM?si=WpA5jop4Q2aazL8Wr98nag" target="_blank" id="botao-ouvir">Ouvir Agora</a>
+            </div>
+        </div>
+
+        <h2 class="text-center mt-5 mb-3">Próximos Shows</h2>
+        <div class="shows-container">
+            <div class="shows-grid">
+
+                <div class="grid-header">Data</div>
+                <div class="grid-header">Cidade</div>
+                <div class="grid-header">Local</div>
+                <div class="grid-header">Artista</div>
+                
+                <div class="grid-row">
+                    <div class="grid-item data-item">12/04/2025</div>
+                    <div class="grid-item">São Paulo, BR</div>
+                    <div class="grid-item local-item">Allianz Parque</div>
+                    <div class="grid-item">Blackbear</div>
+                </div>
+                
+                <div class="grid-row">
+                    <div class="grid-item data-item">18/04/2025</div>
+                    <div class="grid-item">Rio de Janeiro, BR</div>
+                    <div class="grid-item local-item">Jeunesse Arena</div>
+                    <div class="grid-item">Blackbear</div>
+                </div>
+                
+                <div class="grid-row">
+                    <div class="grid-item data-item">25/04/2025</div>
+                    <div class="grid-item">Belo Horizonte, BR</div>
+                    <div class="grid-item local-item">Mineirão</div>
+                    <div class="grid-item">Blackbear</div>
+                </div>
+                
+                <div class="grid-row">
+                    <div class="grid-item data-item">01/05/2025</div>
+                    <div class="grid-item">Porto Alegre, BR</div>
+                    <div class="grid-item local-item">Arena do Grêmio</div>
+                    <div class="grid-item">Blackbear</div>
+                </div>
+                
+                <div class="grid-row">
+                    <div class="grid-item data-item">08/05/2025</div>
+                    <div class="grid-item">Curitiba, BR</div>
+                    <div class="grid-item local-item">Pedreira Paulo Leminski</div>
+                    <div class="grid-item">Blackbear</div>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="text-center mt-5 mb-3">Galeria de Álbuns</h2>
+        <div class="album-gallery">
+            <div class="album-item">
+                <img src="https://cdn-images.dzcdn.net/images/cover/8293e8bd8eb0cc4224bd8da67d0a8f36/500x500.jpg" alt="hot girl bummer" class="album-cover">
+                <div class="album-title">everything means nothing</div>
+            </div>
+            <div class="album-item">
+                <img src="https://i.scdn.co/image/ab67616d0000b2736c112ab47442b526755ffe36" alt="digital druglord" class="album-cover">
+                <div class="album-title">digital druglord</div>
+            </div>
+            <div class="album-item">
+                <img src="https://i.discogs.com/-loeVG0ZIrvmuCCmZl1eyESYIzoLysWRDE4WzZcdf3I/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1NDYy/MDM2LTE3MDU5MjI1/MzQtODMzOS5qcGVn.jpeg" alt="anonymous" class="album-cover">
+                <div class="album-title">anonymous</div>
+            </div>
+            <div class="album-item">
+                <img src="https://cdn-images.dzcdn.net/images/cover/a7e4bf15f1599668c6fb3cefea93b189/0x1900-000000-80-0-0.jpg" alt="deadroses" class="album-cover">
+                <div class="album-title">deadroses</div>
+            </div>
+            <div class="album-item">
+                <img src="https://i.scdn.co/image/ab67616d0000b27345079bdb1e77cda3747ce5f9" alt="cybersex" class="album-cover">
+                <div class="album-title">cybersex</div>
+            </div>
+            <div class="album-item">
+                <img src="https://i.scdn.co/image/ab67616d0000b273958e2503616441417a016906" alt="sex" class="album-cover">
+                <div class="album-title">sex</div>
+            </div>
+            <div class="album-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/0/0f/In_Loving_Memory_Blackbear_cover_art.jpeg" alt="in loving memory" class="album-cover">
+                <div class="album-title">in loving memory</div>
+            </div>
+            <div class="album-item">
+                <img src="https://i.scdn.co/image/ab67616d0000b273f9a387cf83a3fbb15d17fa82" alt="help" class="album-cover">
+                <div class="album-title">help</div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="text-center mt-5 mb-3">Gêneros Musicais</h2>
+            <div class="generos-container">
+                <ol class="generos-lista">
+                    <li class="genero">
+                        Rock
+                        <ul class="artistas-lista">
+                            <li class="artista">Linkin Park</li>
+                            <li class="artista">Foo Fighters</li>
+                            <li class="artista">Queen</li>
+                        </ul>
+                    </li>
+                    <li class="genero">
+                        Pop
+                        <ul class="artistas-lista">
+                            <li class="artista">Blackbear</li>
+                            <li class="artista">Taylor Swift</li>
+                            <li class="artista">The Weeknd</li>
+                        </ul>
+                    </li>
+                    <li class="genero">
+                        Jazz
+                        <ul class="artistas-lista">
+                            <li class="artista">Miles Davis</li>
+                            <li class="artista">John Coltrane</li>
+                            <li class="artista">Ella Fitzgerald</li>
+                        </ul>
+                    </li>
+                    <li class="genero">
+                        MPB
+                        <ul class="artistas-lista">
+                            <li class="artista">Caetano Veloso</li>
+                            <li class="artista">Gilberto Gil</li>
+                            <li class="artista">Elis Regina</li>
+                        </ul>
+                    </li>
+                    <li class="genero">
+                        Hip-Hop
+                        <ul class="artistas-lista">
+                            <li class="artista">Eminem</li>
+                            <li class="artista">Kendrick Lamar</li>
+                            <li class="artista">Drake</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="text-center mt-5 mb-3">Tabela de Discos</h2>
+            <div class="tabela-container">
+                <table class="tabela-discos">
+                    <caption>Álbuns Essenciais para Conhecer</caption>
+                    <thead>
+                        <tr>
+                            <th>Artista</th>
+                            <th>Álbum</th>
+                            <th>Ano de Lançamento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="album-recente">
+                            <td>Blackbear</td>
+                            <td>In Loving Memory</td>
+                            <td>2022</td>
+                        </tr>
+                        <tr class="album-recente">
+                            <td>Blackbear</td>
+                            <td>Everything Means Nothing</td>
+                            <td>2020</td>
+                        </tr>
+                        <tr class="album-recente">
+                            <td>Blackbear</td>
+                            <td>Anonymous</td>
+                            <td>2019</td>
+                        </tr>
+                        <tr class="album-recente">
+                            <td>Blackbear</td>
+                            <td>Digital Druglord</td>
+                            <td>2017</td>
+                        </tr>
+                        <tr>
+                            <td>Blackbear</td>
+                            <td>Deadroses</td>
+                            <td>2015</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; Criado por Daniel Martins - Engenharia de Software - 2025</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
